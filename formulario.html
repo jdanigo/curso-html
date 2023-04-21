@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Se incluyen metadatos e información importante para el navegador, aquí básicamente reposa la información ténica que va leer
+        el navegador y los motores de búsqueda, cabe mencionar que esta información no será visible en la página web -->
+
+        <meta charset="UTF-8"> <!-- Se encarga de identificar el conjunto de caracteres que se utilizará en el documento -->
+
+        <meta name="viewport" content="width:device-width, initial-scale=1.0"> <!-- Define la escala inicial y las dimensiones del área visible del sitio web en diferentes dispositivos-->
+        
+        <title>Hola mundo</title> <!--Esta etiqueta define el título de la página que se mostrará en la pestaña del navegador-->
+        
+        <meta name="description" content="Descripcion de la pagina"> <!-- Se encarga de establecer una breve descripción del contenido de la página, esta breve descripción será visible en los motores de búsqueda-->
+
+        <meta name="author" content="Daniel Garces"> <!--Se encarga de establecer el nombre del autor del documento-->
+
+    </head>    
+    <body>
+        <main>
+            <section id="formulario-basico">
+                <h1>Formulario básico</h1>
+                <!-- 
+                VERBOS HTTP
+                POST
+                GET
+                PUT
+                PATCH
+                DELETE
+                OPTIONS
+                HEAD -->
+                <form method="" action="" name="" id="" class="">
+                    <div>
+                        <label for="nombre"> Nombre:</label>
+                        <input type="text" id="nombre" class="" name="nombre" placeholder="Escriba su nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="apellido"> Apellido:</label>
+                        <input type="text" id="apellido" class="" name="apellido" placeholder="Escriba su apellido" required>
+                    </div>
+
+                    <div>
+                        <label for="correo"> Correo:</label>
+                        <input type="email" id="correo" class="" name="correo" placeholder="Escriba su correo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </div>
+
+                    <div>
+                        <label for="correo"> Mensaje:</label>
+                        <textarea id="correo" class="" name="" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="" class="">Enviar</button> <!--Forma 1-->
+                        <input type="button" id="" class="" value="Enviar"> <!-- Forma 2-->
+                        <input type="submit" id="" class="" value="Enviar"> <!-- Forma 3-->
+                    </div>
+                    
+                </form>
+            </section>
+
+            <section id="formulario-avanzado">
+                <h1>Formulario Avanzado</h1>
+                <form>
+
+                    <input type="hidden" name="oculto" value="" id=""> <!--Se utiliza para almacenar un valor que se necesite al momento de enviar el formulario-->
+
+                    <div>
+                        <label>Nombres</label>
+                        <input type="text" name="nombre" value="" id="" class="" placeholder="Escriba su nombre">
+                    </div>
+
+                    <div>
+                        <label>Apellidos</label>
+                        <input type="text" name="apellido" value="" id="" class="" placeholder="Escriba su apellido">
+                    </div>
+
+                    <div>
+                        <label>Foto</label>
+                        <input type="file" name="foto" value="" id="" class="">
+                    </div>
+
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="password" name="contrasena" value="" id="" class="" placeholder="Escriba su contraseña">
+                    </div>
+
+                    <div>
+                        <label>Edad</label>
+                        <input type="number" name="edad" value="" id="" class="" placeholder="Escriba su edad">
+                    </div>
+
+                    <div>
+                        <label>Telefono</label>
+                        <input type="tel" name="telefono" value="" id="" class="" placeholder="Escriba su telefono">
+                    </div>
+
+                    <div>
+                        <label>Correo</label>
+                        <input type="email" name="correo" value="" id="" class="" placeholder="Escriba su correo">
+                    </div>
+
+                    <div>
+                        <label>Sitio Web</label>
+                        <input type="url" name="website" value="" id="" class="" placeholder="Escriba su url">
+                    </div>
+
+                    <div>
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" name="fecha_nacimiento" value="" id="" class="">
+                    </div>
+
+                    <div>
+                        <label>Hora de nacimiento</label>
+                        <input type="time" name="hora_nacimiento" value="" id="" class="">
+                    </div>
+
+                    <div>
+                        <label>Rango de edad</label>
+                        <input type="range" name="rango" min="10" max="50" value="" id="" class="">
+                    </div>
+
+                    <div>
+                        <label>Color Favorito</label>
+                        <input type="color" name="color_favorito" value="" id="" class="">
+                    </div>
+
+
+                    <div>
+                        <label>Tipo de consulta</label>
+                        <select name="tipo_consulta" class="" id="">
+                            <option value="">Consulta 1</option>
+                            <option>Consulta 2</option>
+                            <option>Consulta 3</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="" name="sexo" value="F">  <label>Femenino</label>
+                        <input type="radio" id="" name="sexo" value="M">  <label>Masculino</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="acepto" value="SI"> Acepto los términos de uso y condiciones
+                    </div>
+
+                    <div>
+                        <button type="button">Enviar</button>
+                        <button type="reset">Resetear</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        
+        
+    </body>
+</html>

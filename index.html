@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Se incluyen metadatos e información importante para el navegador, aquí básicamente reposa la información ténica que va leer
+        el navegador y los motores de búsqueda, cabe mencionar que esta información no será visible en la página web -->
+
+        <meta charset="UTF-8"> <!-- Se encarga de identificar el conjunto de caracteres que se utilizará en el documento -->
+
+        <meta name="viewport" content="width:device-width, initial-scale=1.0"> <!-- Define la escala inicial y las dimensiones del área visible del sitio web en diferentes dispositivos-->
+
+        <link rel="icon" href="" type="image/x-icon"> <!-- Establece un ícono en la pestaña del navegador o comúnmente lo conocemos como favicon, esto facilita incluso la identificación del sitio en los motores de búsqueda  -->
+        
+        <title>Hola mundo</title> <!--Esta etiqueta define el título de la página que se mostrará en la pestaña del navegador-->
+        
+        <link rel="stylesheet" href="./assets/css/estilos.css"> <!--Se encarga de vincular una hoja de estilos CSS-->
+
+        <meta name="description" content="Descripcion de la pagina"> <!-- Se encarga de establecer una breve descripción del contenido de la página, esta breve descripción será visible en los motores de búsqueda-->
+
+        <meta name="keywords" content="palabras,clave,separadas,por,coma"> <!-- Se encarga de establecer las palabras clave que se utilizan para encontrar una página en los motores de búsqueda-->
+
+        <meta name="author" content="Daniel Garces"> <!--Se encarga de establecer el nombre del autor del documento-->
+
+        <!-- <meta http-equiv="refresh" content="5;url=https://google.com">  Realiza un redireccionamiento de este documento a la url en mención, para este caso se establece un tiempo de 5 segundos-->
+
+        <meta http-equiv="cache-control" content="no-cache"> <!--Esto le indica al navegador que no almacene caché en la página, esto puede mejorar la privacidad y la seguridad-->
+
+    </head>    
+    <body>
+        <!-- Etiquetas de encabezado o título -->
+        <h1>Bienvenidos a mi sitio web</h1> <!-- 1 sola etiqueta h1 por pagina html -->
+        <h2>Encontrará contenido acerca de desarrollo web</h2> <!-- máximo 20 etiquetas h2 por pagina html-->
+        <h3>Gracias por su visita</h3> <!--máximo 10 etiquetas h3 por página html -->
+        <h4>Titulo alternativo</h4>
+        <h5>Titulo alternativo</h5>
+        <h6>Titulo alternativo</h6>
+
+        <!-- Creacion de listas en html -->
+        <ul>
+            <li>Elemento de la lista 1</li> <!--Item de la lista-->
+            <li>Elemento de la lista 2</li> <!--Item de la lista-->
+            <li>Elemento de la lista 3</li> <!--Item de la lista-->
+            <li>Elemento de la lista 4</li> <!--Item de la lista-->
+        </ul>
+
+        <!-- Creacion de listas ordenadas en html -->
+        <ol>
+            <li>Elemento de la lista 1</li> <!--Item de la lista-->
+            <li>Elemento de la lista 2</li> <!--Item de la lista-->
+            <li>Elemento de la lista 3</li> <!--Item de la lista-->
+            <li>Elemento de la lista 4</li> <!--Item de la lista-->
+        </ol>
+
+        <!-- Creacion de tablas -->
+        <table>
+           <thead>
+            <tr>
+               <th>Nombres</th> 
+               <th>Apellidos</th> 
+               <th>Correo</th> 
+            </tr>
+           </thead> 
+           <tbody>
+            <tr>
+                <td>Daniel</td>
+                <td>Garces</td>
+                <td>jdanigo@hotmail.com</td>
+            </tr>
+           </tbody>
+        </table>
+
+        <!-- Incorporación de imágenes a mi documento -->
+        <img src="https://via.placeholder.com/300" alt="Esta es una imagen de relleno">
+        <img src="./assets/img/img01.jpeg" alt="Esta es una imagen de relleno">
+
+        <!-- Escribir parrafos -->
+        <p>Esto es un parrafo</p>
+        <p>Esto es otro parrafo</p>
+
+        <!-- Resaltar texto importante -->
+        <strong>Esto es un texto importante</strong> <!-- Poner todo el texto en negrita-->
+
+        <!-- Resaltar una palabra clave en los motores de búsqueda -->
+        <b>Esta es una palabra clave</b> <!-- Poner todo el texto en negrita-->
+
+        <!-- Hacer citas o frases -->
+        <q>Guerra avisada no mata soldado!</q>
+
+        <!-- Etiquetas de salto de linea -->
+        <br> <!--Etiqueta contenida, que requiere apertura y cierre -->
+        <br/> <!-- Etiqueta autocontenida-->
+
+        <!-- Crear vínculos -->
+        <a href="https://google.com">Ir a google</a>
+        <a href="https://google.com" target="_blank">Ir a google</a> <!-- Abrir una nueva pestaña-->
+        <a href="https://google.com" target="_self">Ir a google</a> <!-- Abrir en la pestaña actual (defecto) -->
+
+        <!-- Hacer pequeñas aclaraciones, como texto de ayuda -->
+        <small>¿Olvidó su contraseña?</small>
+
+        <!-- Etiquetas de bloque o agrupación o capas -->
+        <div></div> <!--Se encarga de realizar una capa o una división en bloque dentro de html, sirve para agrupar formulario u otras etiquetas-->
+        <span></span> <!--Permite separar en capas de forma lineal-->
+
+        <main></main> <!--Permite establecer un bloque de código, haciendo la notación que es un bloque principal-->
+
+        <hr> <!-- Separación semántica, dibuja una línea de seperación -->
+        <container></container> <!--Establece un contenedor, para tener un grupo mas grande de etiquetas.-->
+
+        <address></address> <!-- Me permite escribir información relacionada con una dirección -->
+
+        <aside></aside> <!-- Sirve para colocar contenido no relacionado-->
+
+        <script src=""></script> <!--Etiqueta encargada de hacer la importación de un archivo de javascript -->
+
+        <audio></audio> <!-- Permite incorporar archivos de audio dentro de HTML-->
+        <video></video> <!-- Permite incorporar archivos de video dentro de HTML-->
+
+        <!-- Marco flotantes -->
+        <iframe></iframe> <!-- Es permitir incorporar contenido externo dentro de mi HTML -->
+
+
+        <!-- Etiquetas de seccion -->
+        <section></section> <!-- Permite establecer una sección dentro de nuestro documento HTML, puede recibir como atributos, class, id-->
+
+        <!-- Etiquetas de dibujo o lienzo -->
+        <canvas></canvas> <!-- Permite establecer un lienzo dentro de html, se pueden crear figuras 2D-->
+
+        <!-- Agrupacion de formularios -->
+        <fieldset> </fieldset> <!-- Permite agrupar elementos de un formulario, relacionados con una seccion, se utuliza muy frecuente en formularios de contacto-->
+
+        <article></article> <!--Esto nos permite, hablar de un tema en específico, asumiendo que es un artículo, donde puede involucrar etiquetas de encabezado, de bloque o parrafo-->
+    </body>
+</html>
